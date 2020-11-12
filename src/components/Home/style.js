@@ -2,13 +2,14 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 display: flex;
+width:100%;
 justify-content: center;
 margin: 73px 0 157px;
 `
 
 export const Form = styled.div`
   width: 585px;
-  height: 794px;
+  height: fit-content;
   margin: 0 0 6px;
   padding: 68px 72px 34px 72px;
   border-radius: 11px;

@@ -3,8 +3,6 @@ import { Form, Wrapper, Title, Content } from './style'
 import Checkbox from '../Checkbox'
 import Forms from '../Form'
 
-
-
 const Home = () => {
   return (
     <Wrapper>

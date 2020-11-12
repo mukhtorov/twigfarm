@@ -17,7 +17,7 @@ const Checkbox = withStyles({
   },
   checked: {},
 })((props) =>
-  <FormControlLabel labelPlacement="End" value={props.value}
+  <FormControlLabel value={props.value}
     label={props.label}
     control={<Radio color="default" {...props} />}
   />

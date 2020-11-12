@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import TextField from '@material-ui/core/TextField';
 import { Container, ErrorText, ButtonsGroup, Header } from './style'
 import Button from '@material-ui/core/Button';
-import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -74,7 +74,7 @@ const Form = ({ onSubmit }) => {
         }) => (
             <Container onSubmit={handleSubmit}>
               <TextField
-                id="outlined-basic"
+                id="outlined-basic-1"
                 label="이메일(아이디)를 입력하세요."
                 variant="outlined"
                 type="email"
@@ -87,7 +87,7 @@ const Form = ({ onSubmit }) => {
                 {errors.email && touched.email && errors.email}
               </ErrorText>
               <TextField
-                id="outlined-basic"
+                id="outlined-basic-2"
                 label="비밀번호를 입력하세요."
                 variant="outlined"
                 type="password"
@@ -100,7 +100,7 @@ const Form = ({ onSubmit }) => {
                 {errors.password && touched.password && errors.password}
               </ErrorText>
               <TextField
-                id="outlined-basic"
+                id="outlined-basic-3"
                 label="이름을 입력하세요."
                 variant="outlined"
                 type="text"
